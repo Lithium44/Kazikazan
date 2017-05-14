@@ -1,21 +1,23 @@
 #Lithium_44 Gelişmiş Kazikazan Skripti Inidirdiginiz Için Teşekkürler
-#Konuya Yorum Bırakmayi Unutmayalim Lütfen :)
+#Konuya Yorum Bırakmayi Ve Bir Teşekkürü Çok Görmeyelim Lütfen :)
 #Eklenmesi Istediginiz Seyleri Konuya Yazarsaniz Ekleme yapilir
 #Herangi bir sorunda veya soruda Skype adresim : atakan4499 Ekleyebilirsiniz
-#Iyı Oyunlar
-
+#Skript Yapımcısı Hariçinde Dosyanin Baska bir forumda Kendinmiş gibi gösterip yayinlamasi yasaktir
+#Skript Editleme Hakkınız Bulunmaktadir Istediginz Yaziyi Degistirebilirsiniz Veya Yeni bir özellik ekleyebilirsiniz
+#Iyı Oyunlar Iyi Kullanimlar
 options:
-	version : 1.0 #Version'u Degistirmeyin Skript Bozulabilir | Yeni Version Cıkınca Sizi Bilgilendirmesi için gereklidir.
+	version : 1.1 #Version'u Degistirmeyin Skript Bozulabilir | Yeni Version Cıkınca Sizi Bilgilendirmesi için gereklidir.
 	
 on load:
 	if {konum.npc} is not set:
 		set {konum.npc} to 0
 		set {npc.ismi} to "Kazikazan"
 		set {kazi.kazan.mod} to 2
-	if text from "http://pastebin.com/raw/6m5AhTQF" is not "{@version}":
+	if text from "https://raw.githubusercontent.com/Lithium44/Kazikazan/master/config" is not "{@version}":
 		wait a second
 		send "&7<KaziKazan> Skriptinin Eski Versionunu Kullaniyorsun {@version}" to console
 		send "&7Yeni Versionu Indirmek Icin /kazi version indir Komutunu Kullaniniz" to console
+
 function kazisil(e1: entity):
 	loop all entities:
 		name of loop-entity contains "&2%{npc.ismi}%"
@@ -35,24 +37,24 @@ function Kazikazan(p1: player):
 	format slot 6 of {_p1} with red stained glass pane named " " with lore " " to be unstealable	
 	format slot 7 of {_p1} with red stained glass pane named " " with lore " " to be unstealable	
 	format slot 8 of {_p1} with red stained glass pane named " " with lore " " to be unstealable	
-	set slot 9 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 10 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 11 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 12 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 13 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 14 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 15 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 16 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 17 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 18 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 19 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 20 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 21 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 22 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 23 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "		
-	set slot 24 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 25 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
-	set slot 26 of {_p1}'s current inventory to yellow stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 9 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 10 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 11 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 12 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 13 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 14 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 15 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 16 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 17 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 18 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 19 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 20 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 21 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 22 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 23 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "		
+	set slot 24 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 25 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
+	set slot 26 of {_p1}'s current inventory to gray stained glass pane named "&eKazimak Icin tiklayin. "
 	format slot 27 of {_p1} with red stained glass pane named " " with lore " " to be unstealable	
 	format slot 28 of {_p1} with red stained glass pane named " " with lore " " to be unstealable	
 	format slot 29 of {_p1} with red stained glass pane named " " with lore " " to be unstealable	
@@ -65,23 +67,29 @@ function Kazikazan(p1: player):
 	
 command /kazi [<text>] [<text>]:
 	permission: kazikazan.admin
+	permission message:&c<KaziKazan>Bu Komutu Kullanmaya yetkiniz yok
 	aliases: /k
 	trigger:
 		if arg-1 is not set:
 			send "&7       &8&m----------&r &b✯ &9&lKaziKazan &b✯ &8&m----------"
-			send "&9<KaziKazan> &7/Kazi Kur | KaziKazan Npcsini Konumlandirir"
-			send "&9<KaziKazan> &7/Kazi sil | Konumlandirdiginiz Npcyi siler"
-			send "&9<KaziKazan> &7/Kazi isim <NpcIsmi> | Kazikazan Npcsisinin Ismini belirler"
-			send "&9<KaziKazan> &7/Kaziitem <Isim> <adet> | Kazikazan Oynamak Icin gerekli Anahtari Verir"
-			send "&9<KaziKazan> &7/Kazi Mod 1/2/3 | KaziKazan Oyunun Modunu Degistirir"
+			send "&6/Kazi Kur | &7KaziKazan Npcsini Konumlandirir"
+			send "&6/Kazi sil | &7Konumlandirdiginiz Npcyi siler"
+			send "&6/Kazi isim <NpcIsmi> | &7Kazikazan Npcsisinin Ismini belirler"
+			send "&6/Kaziitem <Isim> <adet> | &7Kazikazan Oynamak Icin gerekli Anahtari Verir"
+			send "&6/Kazi Mod 1/2/3 | &7KaziKazan Oyunun Modunu Degistirir"
 			send "-    &7 1.Mod 1 Ile 150 arasinda rastgele bir miktar verir "
 			send "-    &7 2.Mod 15,25,50,100,150,300 Rastgele bir miktar verir"
 			send "-    &7 3.Mod Rastgele bir Esya verir"
-			send "&9<KaziKazan> &7/Kazi yenile | Skript Dosyasini yeniler"
-			send "&9<KaziKazan> &7/kazi version kontrol | Skriptin Versionunu Kontrol eder"
-			send "&9<KaziKazan> &7/kazi version indir | Skriptin Yeni Versionunu indirir"
-			send "&9<KaziKazan> &7/kazi version yenilik | Yeni Versionda gelen yenilikleri gosterir"
+			send "&7           &8&m-------------&r &7Sayfa 1 &8&m-------------"
+		if arg-1 is "2":
+			send "&7       &8&m----------&r &b✯ &9&lKaziKazan &b✯ &8&m----------"
+			send "&7&6/Kazi yenile |&7 Skript Dosyasini yeniler"
+			send "&7&6/kazi version kontrol |&7 Skriptin Versionunu Kontrol eder"
+			send "&7&6/kazi version indir |&7 Skriptin Yeni Versionunu indirir"
+			send "&7&6/kazi version yenilik | &7Yeni Versionda gelen yenilikleri gosterir"
+			send "&7           &8&m-------------&r &7Sayfa 2 &8&m-------------"
 		if arg-1 is "reload" or "r" or "yenile" or "y":
+			send "&9<KaziKazan> Skript Yenileniyor..." to player
 			execute console command "sk reload kazi"
 			send "&9<KaziKazan> Skript Yenilendi" to player
 		if arg 1 is "isim":
@@ -90,6 +98,7 @@ command /kazi [<text>] [<text>]:
 			if arg 2 is set:
 				set {npc.ismi} to arg 2
 				send "&9<KaziKazan> &7Npc Ismini &c%arg-2% &7Olarak Degistirdiniz."
+				send "&7Lütfen Tekrardan &c/kazi kur &7komutunu kullaniniz" to player
 		if arg 1 is "kur" or "Kur" or "Konumlandir" or "koy":
 			if {konum.npc} is 1:
 				send "&9<Kazikazan> &7Zaten bir &7KaziKazan Npc'si Mevcut" to player
@@ -107,7 +116,7 @@ command /kazi [<text>] [<text>]:
 				send "&9<Kazikazan> &7Konumlandirilmis Bir Kazikazan Npc'si bulunmuyor" to player
 				send "&9<Kazikazan> &7Konumlandirmak Icin &a/kazi kur&7 Komutunu Kullaniniz" to player
 			if {konum.npc} is 1:	
-				kazisil(entity) 
+				kazisil(entity)
 		if arg-1 is "mod":
 			if arg-2 is "1":
 				set {kazi.kazan.mod} to 1
@@ -123,18 +132,19 @@ command /kazi [<text>] [<text>]:
 		if arg-1 is "version":
 			if arg-2 is set:
 				if arg-2 is "kontrol":
-					if text from "http://pastebin.com/raw/6m5AhTQF" is "{@version}":
+					if text from "https://raw.githubusercontent.com/Lithium44/Kazikazan/master/config" is "{@version}":
 						wait 1 seconds
 						send "&7<KaziKazan> Skritpinin En son versionunu kullanıyorsun &7(&aVersion : {@version}&7)"
-					else if text from "http://pastebin.com/raw/6m5AhTQF" is not "{@version}":
+					else if text from "https://raw.githubusercontent.com/Lithium44/Kazikazan/master/config" is not "{@version}":
+						set {_yeniv::*} to contents from url "https://raw.githubusercontent.com/Lithium44/Kazikazan/master/config"
 						wait a second
 						send "&7<KaziKazan> Skriptinin Eski Versionunu Kullaniyorsun {@version}" to player
-						send "&7Yeni Versionu Indirmek Icin /kazi version indir Komutunu Kullaniniz" to player
+						send "&7Yeni Versionu (V%{_yeniv::*}%) Indirmek Icin &c/kazi version indir &7Komutunu Kullaniniz" to player
 					else:
 						send "<KaziKazan> Bir Hata Olustu Lütfen daha sonra tekrar deneyiniz" to player
 				if arg 2 is "indir":
-					if text from "http://pastebin.com/raw/6m5AhTQF" is not "{@version}":
-						download from "https://pastebin.com/raw/mGtP8tff" to "plugins/Skript/scripts/KaziKazan.sk"
+					if text from "https://raw.githubusercontent.com/Lithium44/Kazikazan/master/config" is not "{@version}":
+						download from "https://raw.githubusercontent.com/Lithium44/Kazikazan/master/kazikazan.sk" to "plugins/Skript/scripts/Kazikazan.sk"
 						send "&aKazikazan Skriptinin Yeni versionu indiriliyor..."
 						wait 3 seconds
 						make console execute command "/sk reload KaziKazan.sk"
@@ -142,26 +152,42 @@ command /kazi [<text>] [<text>]:
 						send "&3&lKazikazan Skriptinin Yeni versionu Basariyla indirildi Version: {@version} " to player
 						send "&3&lEger Kurulmadıgını Dusunuyorsanız Yeni versionun Serveri Kapatip Yeniden acınız" to player
 						launch "BALL_LARGE" firework at player timed 0.3 coloured "red", "BLUE", "YELLOW", "PINK" and "white"
-					else if text from "http://pastebin.com/raw/6m5AhTQF" is "{@version}":
+					else if text from "https://raw.githubusercontent.com/Lithium44/Kazikazan/master/config" is "{@version}":
 						send "&7<KaziKazan>&9 Skritpinin En son versionunu kullanıyorsun &7(&aVersion : {@version}&7)" to player
 					else:
 						wait 1 seconds
 						send "&7<KaziKazan>&9 Bir Hata Olustu Lütfen daha sonra tekrar deneyiniz" to player
 				if arg-2 is "yenilik":
-					set {_yenilik::*} to contents from url "https://pastebin.com/raw/8Y734jbH"
+					set {_yenilik::*} to contents from url "https://raw.githubusercontent.com/Lithium44/Kazikazan/master/yenilik"
 					loop {_yenilik::*}:
 						send "&e%loop-value%" to player
+				if arg-2 is not "yenilik" or "kontrol" or "indir":
+					send "&7<KaziKazan>&9 Hatali Komut Girdiniz" to player
 			else:
 				send "&7<Kazikazan>&9 /kazi version kontrol Yazarak Skript Versionunu Kontrol edebilirsiniz." to player
+		if arg-1 is not "kur" or "Kur" or "Konumlandir" or "koy" or "sil" or "mod" or "version" or "isim" or "reload" or "r" or "yenile" or "y" or "2":
+			send "&7<KaziKazan>&9 Hatali Komut Girdiniz" to player
+#Bu Kisim Hariçinde Editleme Yapabilirsin Burayi Lütfen Birakalim Emeğe Saygi Lütfen :) 
+command /kazikazan:
+	trigger:
+		send "Bu Plugin Lithium_44 Tarafindan Kodlanmistir" to player
+		send "Ve Ucretsiz Olarak MC-TR Formunda Yayinlanmistir" to player
+		send "Özel Plugin Yaptirmak Icin Skype: atakan4499" to player
 
 command /kaziitem <player=%player%> <integer=1>:
+	aliases: /ki
 	permission: kazikazan.admin
-	permission message: Buna yetkiniz yok
+	permission message:&c<KaziKazan>Bu Komutu Kullanmaya yetkiniz yok
 	usage: &c/kaziitem <Oyuncu Ismi>
 	trigger:
 		set {_tane} to arg-1
 		give {_tane} arg-2 of Tripwire Hook named "&eKaziKazan Anahtari"
-			
+on join:
+	if player is op:
+		if text from "https://raw.githubusercontent.com/Lithium44/Kazikazan/master/config" is not "{@version}":
+			wait a second
+			send "&7<KaziKazan>&9 Skriptinin Eski Versionunu Kullaniyorsun &c{@version}"
+			send "&9Yeni Versionu Indirmek Icin &c/kazi version indir &9Komutunu Kullaniniz"
 
 		
 on inventory click:
@@ -173,15 +199,16 @@ on inventory click:
 				if {tik.%player%} is between 1 and 3:
 					set {_slot::1} to clicked slot
 					wait a tick
-					format slot {_slot::1} of player with red stained glass pane named "%{_kazi::1}% " with lore "%{_kazi::1}% " to be unstealable
-					play note pling at player with pitch 2
+					format slot {_slot::1} of player with white stained glass pane named "&c&lKazindi " with lore "%{_kazi::1}%  Lira Kazandiniz" to be unstealable
+					play sound "note pling" to player with volume 1 and pitch 2
 					add 1 to {tik.%player%}
-					send "%{_kazi::1}% Lira Kazandiniz" to player
+					send "&c%{_kazi::1}% &aLira Kazandiniz" to player
+					send action bar from "&c%{_kazi::1}% &aLira Kazandiniz" to player
 					add {_kazi::1} to player's balance
 				if {tik.%player%} is 4:
 					wait 0.5 seconds
-					play LEVEL_UP at player with pitch 2
-					play LEVEL_UP at player with pitch 2
+					play sound "LEVEL_UP" to player with volume 1 and pitch 2
+					play sound "LEVEL_UP" to player with volume 1 and pitch 2
 					close player's inventory
 		if {kazi.kazan.mod} is 2:
 			set {_rand::*} to "15","15","15","15","15","15","15","15","15", "25","25", "50", "75", "100", "150" and "300"
@@ -193,35 +220,37 @@ on inventory click:
 					if {tik.%player%} is between 1 and 3:
 						set {_slot::1} to clicked slot
 						wait a tick
-						format slot {_slot::1} of player with red stained glass pane named "%{_rand.slot}% " with lore "%{_rand.slot}% " to be unstealable
-						play note pling at player with pitch 2
+						format slot {_slot::1} of player with white stained glass pane named "&c&lKazindi" with lore "%{_rand.slot}%  Lira Kazandiniz" to be unstealable
+						play sound "note pling" to player with volume 1 and pitch 2
 						add 1 to {tik.%player%}
-						send "&c%{_rand.slot}% Lira Kazandiniz" to player
-						add {_kazi::1} to player's balance
+						send "&c%{_rand.slot}% &aLira Kazandiniz" to player
+						send action bar from "&c%{_rand.slot}% &aLira Kazandiniz" to player
+						add {_rand.slot} to player's balance
 					if {tik.%player%} is 4:
 						wait 0.5 seconds
-						play LEVEL_UP at player with pitch 2
-						play LEVEL_UP at player with pitch 2
+						play sound "LEVEL_UP" to player with volume 1 and pitch 2
+						play sound "LEVEL_UP" to player with volume 1 and pitch 2
 						close player's inventory
 		if {kazi.kazan.mod} is 3:
-			set {_itemm::*} to diamond sword or diamond boots or diamond helmet or diamond or diamond chestplate or diamond leggings or diamond shovel or diamond pickaxe 
+			set {_itemm::*} to diamond sword or diamond boots or diamond helmet or diamond or diamond chestplate or diamond leggings or diamond shovel or diamond pickaxe or iron pickaxe or iron chestplate or stone or iron sword or iron hoe or iron shovel or iron leggings or golden apple or iron ingot or gold ingot or bow or arrow or golden helmet or golden chestplate or golden leggings or golden boots or iron helmet or iron boots or wooden sword or gold sword or leather cap or leather tunic or leather pants or leather boots or chain helmet or chain chestplate or chain leggings or chain boots
 			set {_rand::*} to {_itemm::1}
 			set {_rand.slot} to a random element out of {_rand::*} 
 			set {_rand.slot} to {_rand.slot} parsed as a text
-			send "%{_itemm::*}%" to player
 			wait a tick
 			if clicked slot is between 9 and 26:
 				if inventory name of player's current inventory is "&eKaziKazan":
 					if {tik.%player%} is between 1 and 3:
 						set {_slot::1} to clicked slot
-						format slot {_slot::1} of player with 1 of {_rand.slot} named "%{_rand.slot}% " with lore "%{_rand.slot}% " to be unstealable
-						play note pling at player with pitch 2
+						format slot {_slot::1} of player with 1 of {_rand.slot} named "&6&lKazidin " with lore "&c%{_rand.slot}% &aKazandin " to be unstealable
+						play sound "note pling" to player with volume 1 and pitch 2
 						add 1 to {tik.%player%}
-						give {_rand.slot} to player
+						give {_rand.slot} to player 
+						send "&c%{_itemm::*}% &aKazandin" to player
+						send action bar from "&c%{_itemm::*}% &aKazandin" to player
 					if {tik.%player%} is 4:
 						wait 0.5 seconds
-						play LEVEL_UP at player with pitch 2
-						play LEVEL_UP at player with pitch 2
+						play sound "LEVEL_UP" to player with volume 1 and pitch 2
+						play sound "LEVEL_UP" to player with volume 1 and pitch 2
 						close player's inventory
 		
 on inventory open:
@@ -239,6 +268,9 @@ on death of a creeper:
 		delete {konumnpc}
 		set {konum.npc} to 0
 		send "&9<KaziKazan>&7 Npc Silindi" to ops
+On explosion prime:
+	if name of entity contains "&2%{npc.ismi}%":
+		cancel event
 every second:
 	loop all entities:
 		if name of loop-entity contains "&2%{npc.ismi}%":
@@ -252,12 +284,16 @@ on right click on entity:
 			Kazikazan(player)
 		else:
 			send "&eKaziKazan Anahtarina &7Ihtiyacin var" to player
+			send "&7Anahtari Moblari Keserek Elde edebilirsin" to player
 on damage of a creeper:
 	if attacker is not op:
 		if name of victim contains "&2%{npc.ismi}%":
 			cancel event
 		
 on death of a zombie or skeleton or creeper or baby zombie or spider or cave spider or blaze or magma cube or witch:
-	chance of 5%:
+	chance of 3%:
 		if attacker is a player:
 			set {_loc} to victim's location
+			drop a Tripwire Hook named "&eKaziKazan Anahtari" at {_loc}
+			
+			
